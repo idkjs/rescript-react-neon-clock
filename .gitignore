@@ -26,6 +26,5 @@
 .parcel-cache
 *.bs.js
 /node_modules/
-/dist/
 /lib/
 /tests/__snapshots__
