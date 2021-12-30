@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rm -rf .parcel-cache dist && rescript build && npm run pack; parcel build public/index.html",
     "clean": "rm -rf .parcel-cache dist && rescript clean",
-    "dev": "parcel public/index.html",
+    "dev": "parcel serve public/index.html",
     "start": "rescript build -w",
     "pack": "esbuild src/index.bs.js --bundle --outfile=src/index.js",
     "predeploy": "rm -rf dist && parcel build public/index.html --public-url /rescript-react-neon-clock",

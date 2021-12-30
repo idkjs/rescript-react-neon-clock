@@ -13097,9 +13097,13 @@
       function App2(Props) {
         return React2.createElement("div", {
           className: "clock"
-        }, React2.createElement("header", void 0, React2.createElement("a", {
+        }, React2.createElement("div", void 0, React2.createElement("header", void 0, React2.createElement("a", {
           href: "https://github.com/idkjs/rescript-react-neon-clock"
-        }, "github.com/idkjs/rescript-react-neon-clock")), React2.createElement(NeonClockV1.make, {}), React2.createElement(NeonClockV2.make, {}));
+        }, "github.com/idkjs/rescript-react-neon-clock"))), React2.createElement("span", {
+          className: "glow"
+        }, "Using ReactReact package"), React2.createElement(NeonClockV1.make, {}), React2.createElement("span", {
+          className: "glow"
+        }, "Using Rescript package"), React2.createElement(NeonClockV2.make, {}));
       }
       var make = App2;
       exports.make = make;
