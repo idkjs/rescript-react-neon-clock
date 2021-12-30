@@ -974,10 +974,14 @@ var NeonClockV2 = require("./NeonClockV2.bs.js");
 function App(Props) {
     return React.createElement("div", {
         className: "clock"
-    }, React.createElement("header", undefined, React.createElement("a", {
+    }, React.createElement("div", undefined, React.createElement("header", undefined, React.createElement("a", {
         href: "https://github.com/idkjs/rescript-react-neon-clock"
-    }, "github.com/idkjs/rescript-react-neon-clock")), React.createElement(NeonClockV1.make, {
-    }), React.createElement(NeonClockV2.make, {
+    }, "github.com/idkjs/rescript-react-neon-clock"))), React.createElement("span", {
+        className: "glow"
+    }, "Using ReactReact package"), React.createElement(NeonClockV1.make, {
+    }), React.createElement("span", {
+        className: "glow"
+    }, "Using Rescript package"), React.createElement(NeonClockV2.make, {
     }));
 }
 _c = App;
