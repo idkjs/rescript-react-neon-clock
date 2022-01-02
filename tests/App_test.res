@@ -14,7 +14,7 @@ describe("App", () => {
 
   it("contains `It works!`", () => {
     render(<App />)
-    |> getByText(~matcher=#Str("It works!"))
+    |> getByText(_,~matcher=#Str("It works!"))
     |> expect
     |> toMatchSnapshot
   })
